@@ -349,7 +349,7 @@ lower or equal = le ### less than or equal to...
 
 ###
 
-Do you want to contribute? See the file  [CONTRIBUTING.md](https://github.com/Kauan19-hub/Kauan19-hub/blob/main/CONTRIBUTING.md) in the repository for guides and code of conduct.
+Do you want to contribute? See the file  [CONTRIBUTING.md](https://github.com/kauanvinicius9/kauanvinicius9/blob/main/CONTRIBUTING.md) in the repository for guides and code of conduct.
 
 ###
 
