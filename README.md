@@ -362,5 +362,3 @@ Do you want to contribute? See the file  [CONTRIBUTING.md](https://github.com/ka
 ###
 
 It is possible to develop some front-end using Angular, Bootstrap and tailwind css package, and connect it to Back-End. 
-
----
