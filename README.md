@@ -10,18 +10,7 @@ http://127.0.0.1:8000/docs
 https://127.0.0.1:8000/
 ```
 
-###
-
-<img width="600" height="600" alt="image" src="https://github.com/user-attachments/assets/c12c790e-8f97-40ba-a3c6-9661e66f1795" /><br>
-<img width="600" height="600" alt="image" src="https://github.com/user-attachments/assets/f197f29b-7b73-4277-a4d7-4a2264d5167e" />
-
-
 ---
-
-API is a light and intuitive **library**/**framework** to build **APIs** **RESTful** quickly and efficiently in **Python**. Inspired by good practices
-modern, **API** facilitates the automatic creation, validation and documentation of your application's routes. 
-
-###
 
 **<h2>Starting</h2>**
 
@@ -36,7 +25,7 @@ pip install api
 
 ###
 
-✅ If you want to test the API locally, we recommend using the fast ASGI server:
+> If you want to test the `API` locally, we recommend using the `fast ASGI server`:
 
 ###
 ```python
@@ -45,7 +34,7 @@ pip install uvicorn
 
 ###
 
-Let's create a simple **API** that responds **"API With FastAPI"**.
+> Let's create a simple **API** that responds **"API With FastAPI"**.
 
 ###
 ```python
@@ -60,7 +49,7 @@ def home():
 
 ###
 
-✅ To run, save the above code in `main.py`:
+> To run, save the above code in `main.py`:
 
 ###
 ```powershell
@@ -82,15 +71,11 @@ http://127.0.0.1:8000/
 
 ###
 
-✅ The output: `{"message": "API With Python"}`
-
-###
-
 **<h2>Parameters</h2>**
 
 ###
 
-✅ You can define parameters in the URL:
+> You can define parameters in the URL:
 
 ###
 ```python
@@ -99,17 +84,9 @@ def read_item(item_id: int):
     return {"item_id": item_id}
 ```
 
-###
-
-Here, `item_id` is an integer parameter extracted from the URL.
-
 ---
 
 **<h2>Request Body</h2>**
-
-###
-
-To receive data via JSON, define typed parameters and the API automatically validates it:
 
 ###
 ```python
@@ -126,28 +103,7 @@ def create_item(item: Item):
 
 ###
 
-**<h2>Usage Examples</h2>**
-
-###
-
-✅ Automatic validation with Pydantic. The API integrates with Pydantic to validate input and output data.
-
-###
-```python
-from pydantic import BaseModel
-
-class User(BaseModel):
-name: str
-email: str
-
-@app.post("/users/")
-def create_user(user: User):
-    return {"message": f"User {user.name} created successfully!"}
-```
-
-###
-
-> If the sent JSON doesn't match the model, the API responds with a 422 error and a clear message.
+> If the sent `JSON` doesn't match the model, the `API` responds with a `422` error and a clear message.
 
 ---
 
@@ -155,7 +111,7 @@ def create_user(user: User):
 
 ###
 
-✅ Your **API** will already have **interactive** documentation accessible via:
+> Your **API** will already have **interactive** documentation accessible via:
 
 ###
 ```Powershell
@@ -178,7 +134,7 @@ You can test **all** endpoints directly through the browser.
 
 ###
 
-✅ You can add **middleware** to intercept requests and responses:
+> You can add **middleware** to intercept requests and responses:
 
 ###
 ```python
@@ -191,44 +147,12 @@ async def log_request(request, call_next):
 ```
 
 ###
- 
-**<h2>API Structure</h2>**
-
-###
-
-**Routes**
-
-###
-
-Routes define the **endpoints** of yours  **API**. Each route is associated with a method `HTTP`:
-
-###
-```python
-@app.get("/caminho") ### responds to GET
-```
-
-###
-```python
-@app.post("/caminho") ### responds to POST
-```
-
-###
-```python
-@app.put("/caminho") ### responds to PUT
-```
-
-###
-```python
-@app.delete("/caminho") ### responds to DELETE
-```
-
-###
 
 **<h2>Parameters</h2>**
 
 ###
 
-✅ You can set parameters in the `URL`:
+> You can set parameters in the `URL`:
 
 ###
 ```python
@@ -239,7 +163,7 @@ def read_item(item_id: int):
 
 ###
 
-Here, `item_id` is a **int** parameter extracted from `URL`.
+> Here, `item_id` is a **int** parameter extracted from `URL`.
 
 ---
 
@@ -247,7 +171,7 @@ Here, `item_id` is a **int** parameter extracted from `URL`.
 
 ###
 
-To receive data via `JSON`, define  **parameters** with types and **API** automatically validates:
+> To receive data via `JSON`, define  **parameters** with types and **API** automatically validates:
 
 ###
 ```python
@@ -268,7 +192,7 @@ def create_item(item: Item):
 
 ###
 
-✅ Automatic validation with `Pydantic`. **API** integrates the `Pydantic` for validating input and output data.
+> Automatic validation with `Pydantic`. **API** integrates the `Pydantic` for validating input and output data.
 
 ###
 ```python
@@ -293,7 +217,7 @@ def create_user(user: User):
 
 ###
 
-✅ Your **API** will already have documentation **interativa** accessible via: 
+> Your **API** will already have documentation **interativa** accessible via: 
 
 ###
 ```powershell
@@ -307,7 +231,7 @@ ReDoc: http://127.0.0.1:8000/redoc
 
 ---
 
-You can test **all** the `endpoints` directly through the **browser**.
+> You can test **all** the `endpoints` directly through the **browser**.
 
 ###
 
@@ -333,7 +257,7 @@ You can test **all** the `endpoints` directly through the **browser**.
 
 ###
 
-✅ `env` is in `.gitignore`, you need to create it every time you use it.
+> `env` is in `.gitignore`, you need to create it every time you use it.
 
 ###
 ```
@@ -342,23 +266,3 @@ grater or equal = ge ### greater than or equal to...
 lower than = lt ### less than...
 lower or equal = le ### less than or equal to...
 ```
-
-###
-
-**<h2>Contributing</h2>**
-
-###
-
-Do you want to contribute? See the file  [CONTRIBUTING.md](https://github.com/kauanvinicius9/kauanvinicius9/blob/main/CONTRIBUTING.md) in the repository for guides and code of conduct.
-
-###
-
-**<h2>License</h2>**
-
-###
-
-✅️ The project is licensed under the license  MIT. You may **use**, **modify**, and **distribute freely**, as long as you keep **credit** to the **original authors**. 
-
-###
-
-It is possible to develop some front-end using Angular, Bootstrap and tailwind css package, and connect it to Back-End. 
