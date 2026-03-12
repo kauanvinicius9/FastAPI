@@ -262,7 +262,19 @@ ReDoc: http://127.0.0.1:8000/redoc
 ###
 ```
 grater than = gt ### greater than...
+```
+
+###
+```
 grater or equal = ge ### greater than or equal to...
+```
+
+###
+```
 lower than = lt ### less than...
+```
+
+###
+```
 lower or equal = le ### less than or equal to...
 ```
